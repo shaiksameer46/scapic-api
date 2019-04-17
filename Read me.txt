@@ -1,0 +1,30 @@
+This project has 4 javascript files
+1. Index.js
+2. product.route.js
+3. product.controller.js
+4. product.model.js
+
+index.js - describes the port allocated and passes the route request to product.route.js files
+
+product.route.js - handles all the api requests and routes to the specific function in productcontroller.js
+
+product.controller.js - defines all the route handling functions and has mongoose query functions to perform operations on the data request
+
+product.model.js - defines schema for the data in the mongo db and passes model to controller to perform operations
+
+
+API end points
+
+1.  https://scapic-backend.herokuapp.com/products/list  --> to get list itmes with all categories
+
+2.  https://scapic-backend.herokuapp.com/products/"category"  --> remove "" and replace any category to get category specific results
+
+3.  https://scapic-backend.herokuapp.com/products/id/"id of item"  --> to get data of only given id
+
+4.  https://scapic-backend.herokuapp.com/products/create     --> to create new entry
+
+5.  https://scapic-backend.herokuapp.com/products/"id of item"/update  --> update specific entry by replacing id
+
+6.  https://scapic-backend.herokuapp.com/products/"id of item"/delete   --> to delete specific entry.
+
+
